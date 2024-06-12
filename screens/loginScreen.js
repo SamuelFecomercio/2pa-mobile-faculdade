@@ -41,10 +41,11 @@ export default function LoginScreen({ navigation }) {
         title="Entrar"
         onPress={() => navigation.navigate("home")}
       />
-      <Text style={styles.textCriar}>Não tem uma conta?</Text>
 
+      <Text style={styles.textCriar}>Não tem uma conta?</Text>
       <TouchableOpacity
         style={styles.buttonCriar}
+        onPress={() => navigation.navigate("registro")}
       >
         <Text style={styles.buttonCriarText}>Criar uma conta agora!</Text>
       </TouchableOpacity>
